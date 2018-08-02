@@ -36,10 +36,10 @@ def downlaod_and_move_image(path_to_image):
         os.rename(file_name, temp)
         file_name = temp
         del temp
-        destination = os.path.join('/home/diego/Documentos/rss_reader/Untitled Folder/Images', file_name)
+        destination = os.path.join('Images', file_name)
         os.rename(file_name, destination)
     else:
-        destination = os.path.join('/home/diego/Documentos/rss_reader/Untitled Folder/Images', file_name)
+        destination = os.path.join('Images', file_name)
         os.rename(file_name, destination)
     return file_name
 
